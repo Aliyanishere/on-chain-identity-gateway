@@ -46,7 +46,7 @@ export * from "./lib/AssignablePublicKey";
 export const findGatewayTokens = async (
   connection: Connection,
   owner: PublicKey | undefined,
-  gatekeeperNetwork: PublicKey | undefined,
+  gatekeeperNetwork?: PublicKey,
   includeRevoked = false,
   page?: number,
 ): Promise<GatewayToken[]> => {
